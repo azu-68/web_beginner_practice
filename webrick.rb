@@ -59,7 +59,7 @@ server.mount_proc("/foods") do |req, res|
   template = ERB.new( File.read('./foods/index.erb') )
   
   params = req.query['foods-select']
-  
+  #対象を決める
   if params ==  'all'
 
       @foods = foods.to_a
