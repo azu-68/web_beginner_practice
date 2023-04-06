@@ -1,0 +1,36 @@
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <form action="/form_post" method="get" accept-charset="utf-8">
+      <ul>
+        <p>GETで送る</p>
+        <label for="name1">ユーザ名</label>
+        <input type="text" id="name" name="user_name"><br>    
+      
+        <label for="age1">年齢</label>
+        <input type="text" id="age" name="user_age"><br>
+        
+        <p class="button">
+          <button type="submit">送信</button>
+        </p>
+        
+      </ul>
+  </form>
+  <form action="/form_post" method="post" accept-charset="utf-8">
+      <ul>
+      　<p>POSTで送る</p>
+        <label for="name">ユーザ名</label>
+        <input type="text" id="name" name="user_name"><br>
+      
+        <label for="age">年齢</label>
+        <input type="text" id="age" name="user_age"><br>
+        
+        <p class="button">
+          <button type="submit">送信</button>
+        </p>
+      </ul>
+    </form>
+ </body>
+</html>
